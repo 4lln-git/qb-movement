@@ -1,0 +1,13 @@
+name = "crimson-desert-claude"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+# Public, non-secret config. Change MODEL here — no code edit needed.
+# ⚠️ For real-time NPC chat, set this to "claude-haiku-4-5" (fast + cheap).
+# Leave it on claude-opus-5 for the highest-quality game-master narration.
+MODEL = "claude-opus-5"
+
+# Secrets are NOT stored here. Set them once from your terminal:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put GAME_SHARED_SECRET
